@@ -16,7 +16,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: "3.1" # You can adjust version
+          ruby-version: "3.4.4" # You can adjust version
 
       - name: Run ping script
         run: ruby ping_well_academy.rb
