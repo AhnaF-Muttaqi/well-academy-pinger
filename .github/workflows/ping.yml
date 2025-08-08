@@ -1,0 +1,22 @@
+name: Ping Well Academy
+
+on:
+  schedule:
+    - cron: "*/3 * * * *" # Every 3 minutes (UTC time)
+  workflow_dispatch: # Optional: allows manual triggering from GitHub UI
+
+jobs:
+  ping:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.1" # You can adjust version
+
+      - name: Run ping script
+        run: ruby ping_well_academy.rb
