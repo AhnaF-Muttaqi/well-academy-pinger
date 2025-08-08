@@ -9,7 +9,7 @@ This repository also includes a GitHub Actions workflow that runs the script eve
 ## How it works
 
 - The Ruby script `ping_well_academy.rb` sends an HTTP GET request to the target URL.
-- The GitHub Actions workflow (`.github/workflows/ping.yml`) schedules this script to run every 2 minutes using cron.
+- The GitHub Actions workflow (`.github/workflows/ping.yml`) schedules this script to run every 3 minutes using cron.
 
 ---
 
